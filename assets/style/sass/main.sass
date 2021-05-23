@@ -1,59 +1,54 @@
-@import "./lib/import"
+// Fivnex Colors:
+$melenta: #c700c7 
+$passion-flame: #cc2269 
+$vell-blue: #2299cc 
+$fivblue: #1674af
+$fivred: #bb223f
 
-.margin-left-1
-    margin-left: 1rem
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto') // Roboto
 
-.navbar-end
-    margin-right: 1rem
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif
+$link: white
+$primary: $fivblue
 
-.fab, .fas
-    margin-right: 1rem
+// Update some of Bulma's component variables
+$control-border-width: 2px
 
-.is-orange
-    background-color: #e44800
-    color: white
-
-.is-blurple
-    background-color: #7289DA
-    color: white
-
+// Fivnex-Specific CSS
 .banner
-    background: url("../../images/jpegs/colorado-springs.jpg")
-    background-size: cover 
-    background-position: center
-    background-repeat: no-repeat
+    background: linear-gradient($passion-flame, $fivred)
 
-.is-pink
-    background-color: #FF00AA
-    color: white
+.navbar-content
+    text-align: center
 
-.is-red
-    background-color: red
-    color: white
+.navbar-content a, .column .card, .margin
+    margin-left: .5rem
+    margin-right: .5rem
 
-.image
-    width: 92px
+.column a, .button a
+    color: hsl(204, 86%, 53%)
 
-.rad-square
-    border-radius: .5rem
+.brand
+    border-radius: 100%
 
-.rad-circle
-    border-radius: 50%
+.global
+    margin-top: .5rem
+    margin-bottom: .5rem
 
-.no-top-margin
-    margin-top: 0
+.banner .column
+    text-align: center
+    vertical-align: middle
 
-.no-bottom-margin
-    margin-bottom: 0
-
-.til
-    display: inline-block
-
-.til-small
-    margin-left: 1rem
-
-.padding
+.banner img
+    width: 50%
+    margin-right: auto
+    margin-left: auto
+    
+.logo
+    max-width: 75px
     padding: 1rem
 
-.has-margin
-    margin: .5rem
+// Import Bulma and Extensions
+@import "./bulma/bulma"
