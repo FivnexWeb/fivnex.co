@@ -8,7 +8,7 @@
   color: white;
 }
 
-.navbar-content {
+.navbar-content, .navbar-start {
   text-align: center;
 }
 
